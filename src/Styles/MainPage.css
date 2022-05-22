@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+body {
+  margin: 0;
+  font-family: poppins;
+}
+.Mainpage {
+  display: flex;
+  height: 100vh;
+}
+.Sidebar {
+  background: url("https://img.freepik.com/free-vector/gradient-border-black-background_53876-118402.jpg");
+  background-size: cover;
+  width: 30vw;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.Searchbar {
+  width: 90%;
+  height: 40px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 2em;
+}
+.Searchbar > input {
+  width: 70%;
+  font-size: 2em;
+}
+.labels {
+  color: whitesmoke;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.answers {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: rgb(255, 251, 0);
+}
+.maps {
+  width: 70vw;
+  z-index: 4;
+}
+.card {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 2em;
+  background-color: #fff;
+  height: 250px;
+  width: 200px;
+  z-index: 5;
+  border: 5px solid blue;
+  animation: card-animator 5s infinite;
+  animation-direction: alternate;
+}
+.card h4 {
+  padding: 0;
+  margin: 0;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes card-animator {
+  0% {
+    background-color: white;
+    border-color: blue;
+  }
+  100% {
+    background-color: blue;
+    border-color: white;
+    color: white;
+  }
+}
