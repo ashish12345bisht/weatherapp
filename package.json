@@ -1,5 +1,6 @@
 {
   "name": "weather-app",
+  "homepage":"https://ashish12345bisht.github.io/weatherapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
